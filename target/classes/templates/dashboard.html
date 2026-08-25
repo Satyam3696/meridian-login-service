@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Meridian Insurance Portal</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <div class="topbar">Meridian <span>Insurance Portal</span></div>
+  <div class="container">
+    <div class="card dashboard-card">
+      <span class="badge">Authenticated Session</span>
+      <h1>Welcome back, <span th:text="${username}">user</span></h1>
+      <p class="subtitle">
+        This is a stand-in for the real policy/claims dashboard. In the full
+        build, this page would call policy-service and claims-service APIs.
+      </p>
+
+      <form class="logout-form" th:action="@{/logout}" method="post">
+        <button type="submit">Sign Out</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
