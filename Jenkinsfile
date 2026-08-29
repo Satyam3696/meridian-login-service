@@ -7,7 +7,7 @@ pipeline {
         IMAGE_TAG       = "${env.BUILD_NUMBER}"
         ANSIBLE_DIR     = '/home/ec2-user/ansible-deploy'
         DEV_RDS_URL     = 'jdbc:mysql://insurance-dev-db-1.c9ysii4k2blq.ap-south-1.rds.amazonaws.com:3306/insurancedb'
-        QA_RDS_URL      = 'jdbc:mysql://insurance-qa-db-1.c9ysii4k2blq.ap-south-1.rds.amazonaws.com:3306/insurancedb'
+        QA_RDS_URL      = 'jdbc:mysql://insurance-qa-db-1.c9ysii4k2blq.ap-south-1.rds.amazonaws.com'
         UAT_RDS_URL     = 'jdbc:mysql://uat-db-subnet-group.cl0um82s228o.ap-south-1.rds.amazonaws.com:3306/insurancedb'
     }
 
