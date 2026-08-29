@@ -3,7 +3,7 @@
 A small Spring Boot app: login, register, secured dashboard. This is the seed
 app we'll wrap in the full company-style pipeline (Jenkins -> Maven -> S3 ->
 Ansible -> Docker -> DockerHub -> AWS) in later phases.
-
+Ansible -> Docker -> DockerHub -> AWS) in later phases.
 ## Requirements to run locally
 - Java 17+ (`java -version`)
 - Maven 3.8+ (`mvn -version`)
